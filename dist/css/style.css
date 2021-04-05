@@ -25,3 +25,168 @@
   font-weight: 700;
   font-style: normal;
 }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  width: 1600px;
+  margin: 0 auto;
+}
+
+input, button, textarea {
+  font-family: "Oxygen", sans-serif;
+}
+
+button {
+  font-family: "Oxygen", sans-serif;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Parmigiano Piccolo Pro", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 160px;
+}
+
+.header__logo {
+  margin-right: 20px;
+}
+
+.header__logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  color: #363636;
+}
+
+.header__logo-text span {
+  color: #b9a882;
+}
+
+.header__logo-subtext {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #44484f;
+}
+
+.header__social-img {
+  width: 30px;
+  height: 30px;
+}
+
+.header__contacts {
+  margin-bottom: 30px;
+  font-size: 12px;
+}
+
+.header__contact {
+  display: inline-block;
+  color: #b9a882;
+}
+
+.header__contact:first-child {
+  position: relative;
+  margin-right: 20px;
+}
+
+.header__contact:first-child:after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 15px;
+  top: 50%;
+  right: -12px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #44484f;
+  opacity: 0.5;
+}
+
+.header__nav-block {
+  text-align: right;
+}
+
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav-name {
+  margin-right: 30px;
+}
+
+.header__nav-name:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link {
+  padding-bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #363636;
+  border-bottom: 5px solid transparent;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__nav-link:hover {
+  border-bottom: 5px solid #b9a882;
+}
