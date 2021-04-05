@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Better Call Saul</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Call Saul</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    @@include('_header.html')
 
-</head>
-<body>
-  
-  @@include('_header.html')
+    <main class="index-content">
+      <section class="main-slider">
+        <div class="main-slider__btns">
+          <div class="main-slider__btn">1</div>
+          <div class="main-slider__btn">2</div>
+        </div>
+        <div class="main-slider__slides">
+          <div class="main-slider__first main-slider__slide">
+            <div class="main-slider__first-info">
+              <h1 class="main-slider__first-title">Sauls Attorneys</h1>
+              <p class="main-slider__first-subtitle">
+                Мы успешно защищаем права и свободы юридических и физических
+                лиц. Колоссальный и зачастую уникальный опыт, а также высокая
+                квалификация наших сотрудников позволяют нам достигать
+                результата, в максимальной степени отвечающего интересам
+                клиента.
+              </p>
+              <a href="#" class="main-btn">Позвонить сейчас!</a>
+            </div>
+          </div>
+          <div class="main-slider__second main-slider__slide">
+            <div class="main-slider__second-info">
+              <h1 class="main-slider__second-title">Sauls Attorneys</h1>
+              <p class="main-slider__second-subtitle">
+                bla
+              </p>
+              <a href="#" class="main-btn">Позвонить сейчас!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
