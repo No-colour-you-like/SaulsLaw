@@ -27,9 +27,11 @@ h1, h2, h3, h4, h5, h6, p, ul
 
 p 
   line-height: 1.5
+  color: $grey-light-color
 
 h1, h2, h3 
   font-family: $parmigiano, sans-serif
+  color: $grey-color
 
 img 
   width: 100%
@@ -50,3 +52,20 @@ img
   color: #fff
   &--dark 
     color: $grey-color
+
+.logo
+  margin-right: 20px
+  &-block
+    display: flex
+    align-items: center
+  &-text 
+    font-family: 'Dancing Script', cursive
+    font-size: 45px
+    color: $grey-dark-color
+    span 
+      color: $brown-color
+  &-subtext 
+    font-size: 9px
+    text-transform: uppercase
+    letter-spacing: 3px
+    color: $grey-light-color

@@ -65,10 +65,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 p {
   line-height: 1.5;
+  color: #44484f;
 }
 
 h1, h2, h3 {
   font-family: "Parmigiano Piccolo Pro", sans-serif;
+  color: #454545;
 }
 
 img {
@@ -94,6 +96,36 @@ img {
 
 .main-btn--dark {
   color: #454545;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  color: #363636;
+}
+
+.logo-text span {
+  color: #b9a882;
+}
+
+.logo-subtext {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #44484f;
 }
 
 .main-slider {
@@ -239,7 +271,7 @@ img {
 }
 
 .services__wrapper {
-  padding: 50px 160px;
+  padding: 50px 160px 90px;
 }
 
 .services-top {
@@ -299,10 +331,163 @@ img {
 .services-top__detail-title {
   font-size: 20px;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .services-top__detail-subtitle {
   font-size: 13px;
+  color: #fff;
+}
+
+.services-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-left {
+  margin-right: 50px;
+}
+
+.services-left__title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.services-left__subtitle {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.services-left__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.services-left__value {
+  margin-right: 20px;
+  width: 170px;
+}
+
+.services-left__value-num {
+  font-size: 60px;
+  font-weight: 700;
+  color: #b9a882;
+}
+
+.services-left__value-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.services-right {
+  max-width: 470px;
+}
+
+.services-right__title {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.services-right__subtitle {
+  font-size: 16px;
+}
+
+.services-right__subtitle:nth-of-type(1) {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.two-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 385px;
+}
+
+.two-blocks__slider {
+  position: relative;
+  width: 100%;
+  margin-right: 5px;
+  background-color: #b9a882;
+}
+
+.two-blocks__slide {
+  width: 100%;
+  height: 100%;
+  padding: 100px 35px 70px 200px;
+}
+
+.two-blocks__slide-text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.two-blocks__slide-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.two-blocks__person-image {
+  width: 85px;
+  height: 85px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.two-blocks__person-name {
+  font-size: 20px;
+  color: #fff;
+}
+
+.two-blocks__person-spec {
+  color: #fff;
+}
+
+.two-blocks__about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4a5b74;
+}
+
+.two-blocks__logo {
+  margin-left: 100px;
+}
+
+.two-blocks__logo-subtext {
+  margin-bottom: 15px;
+}
+
+.two-blocks__btns {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 210px;
+  right: 100px;
+}
+
+.two-blocks__btn {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.two-blocks__btn:first-child {
+  margin-right: 10px;
 }
 
 .header__wrapper {
@@ -316,36 +501,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 160px;
-}
-
-.header__logo {
-  margin-right: 20px;
-}
-
-.header__logo-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__logo-text {
-  font-family: 'Dancing Script', cursive;
-  font-size: 45px;
-  color: #363636;
-}
-
-.header__logo-text span {
-  color: #b9a882;
-}
-
-.header__logo-subtext {
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #44484f;
 }
 
 .header__social-img {
