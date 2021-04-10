@@ -19,7 +19,6 @@ mainSliderBtns.forEach((btn, i) => {
     });
   }
 
-
   switch(i) {
     case 0: 
       changeSlide(0)
@@ -28,5 +27,30 @@ mainSliderBtns.forEach((btn, i) => {
       changeSlide(-slideWidth)
       break
   }
+
+});
+
+// Two-blocks slider 
+
+const indexPersonSliderWrapper = document.querySelector('.two-blocks__slider-wrapper'),
+indexPersonSlider = document.querySelector('.two-blocks__slider'),
+indexPersonSlide = document.querySelector('.two-blocks__slide'),
+indexPersonPrevBtn = document.querySelector('.two-blocks__slider-btn-prev'), 
+indexPersonNextBtn = document.querySelector('.two-blocks__slider-btn-next');
+
+let offset = 0;
+
+let personWrapperWidth = getComputedStyle(indexPersonSliderWrapper).width.slice(0, -2);
+
+
+indexPersonNextBtn.addEventListener('click', () => {
+
+  if (offset == indexPersonSliderWrapper.offsetWidth * 2) {
+    offset = 0
+  } else {
+    offset += indexPersonSlide.offsetWidth
+  }
+
+  indexPersonSlider.style.transform = `translateX(-${offset}px)`;
 
 });
