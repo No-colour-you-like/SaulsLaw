@@ -26,6 +26,9 @@ mainSliderBtns.forEach((btn, i) => {
     case 1: 
       changeSlide(-slideWidth)
       break
+    case 2: 
+      changeSlide(-slideWidth * 2)
+      break
   }
 
 });
@@ -38,19 +41,66 @@ indexPersonSlide = document.querySelector('.two-blocks__slide'),
 indexPersonPrevBtn = document.querySelector('.two-blocks__slider-btn-prev'), 
 indexPersonNextBtn = document.querySelector('.two-blocks__slider-btn-next');
 
-let offset = 0;
-
+let offsetPerson = 0;
 let personWrapperWidth = getComputedStyle(indexPersonSliderWrapper).width.slice(0, -2);
 
 
 indexPersonNextBtn.addEventListener('click', () => {
 
-  if (offset == indexPersonSliderWrapper.offsetWidth * 2) {
-    offset = 0
+  if (offsetPerson == indexPersonSliderWrapper.offsetWidth * 2) {
+    offsetPerson = 0
   } else {
-    offset += indexPersonSlide.offsetWidth
+    offsetPerson += indexPersonSlide.offsetWidth
+  }
+
+  indexPersonSlider.style.transform = `translateX(-${offsetPerson}px)`;
+
+});
+
+
+indexPersonPrevBtn.addEventListener('click', () => {
+
+  if (offset == 0) {
+    offset = indexPersonSliderWrapper.offsetWidth * 2
+  } else {
+    offset -= indexPersonSlide.offsetWidth
   }
 
   indexPersonSlider.style.transform = `translateX(-${offset}px)`;
+
+});
+
+//Footer slider
+
+const footerSliderWrapper = document.querySelector('.footer__slider-wrapper'), 
+footerSlider = document.querySelector('.footer__slider'), 
+footerSlide = document.querySelector('.footer__slider-image'),
+footerSliderPrevBtn = document.querySelector('.footer__slider-btn-prev'),
+footerSliderNextBtn = document.querySelector('.footer__slider-btn-next');
+
+let offsetFooter = 0;
+let footerWrapperWidth = getComputedStyle(footerSliderWrapper).width.slice(0, -2);
+
+footerSliderNextBtn.addEventListener('click', () => {
+
+  if (offsetFooter == footerSlide.offsetWidth * 2) {
+    offsetFooter = 0
+  } else {
+    offsetFooter += footerSlide.offsetWidth
+  }
+
+  footerSlider.style.transform = `translateX(-${offsetFooter}px)`
+
+});
+
+footerSliderPrevBtn.addEventListener('click', () => {
+
+  if (offsetFooter == 0) {
+    offsetFooter = footerSlide.offsetWidth * 2
+  } else {
+    offsetFooter -= footerSlide.offsetWidth
+  }
+
+  footerSlider.style.transform = `translateX(-${offsetFooter}px)`
 
 });
