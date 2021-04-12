@@ -25,12 +25,12 @@
       margin-bottom: 100px 
 
 .about-exp 
+  margin-bottom: 100px
   &__wrapper 
     display: flex 
   
 .interest-service 
   margin-right: 20px
-  margin-bottom: 100px
   &__title 
     font-size: 30px
     margin-bottom: 20px 
@@ -38,17 +38,32 @@
     display: flex
   &__btn 
     padding: 25px 40px
-    border: 1px solid $grey-color
+    border: 1px solid rgba($grey-light-color, 0.3)
     border-bottom: none
     border-right: none 
-    font-size: 13px 
+    font-size: 13px
+    font-weight: 700
+    color: $grey-color 
+    background-color: transparent
+    cursor: pointer
+    transition: 0.2s
     &:last-child
-      border-right: 1px solid $grey-color
+      border-right: 1px solid rgba($grey-light-color, 0.3)
+    &:hover 
+      background-color: $brown-color
+      border: 1px solid $brown-color
+      border-bottom: none
+      border-right: none
+      color: #fff
   &__main 
-    height: 150px
+    position: relative
+    width: 780px
     padding: 30px
-    border: 1px solid $grey-light-color
-
+    border: 1px solid rgba($grey-light-color, 0.3)
+    &-text 
+      max-height: 0
+      overflow: hidden
+     
 .our-exps 
   &__title 
     font-size: 30px
@@ -69,7 +84,7 @@
       align-items: center
     &-line 
       height: 15px 
-      border: 1px solid $grey-light-color
+      border: 2px solid rgba($grey-light-color, 0.3)
       &-first
         width: 75%
         margin-right: 3px
@@ -77,3 +92,86 @@
         background-color: $brown-color
       &-second
         width: 25%
+
+.about-slider 
+  background-color: #4A5B74
+  &__wrapper 
+    padding: 70px 0
+  &__main 
+    position: relative
+    display: flex
+    align-items: center
+    flex-shrink: 0
+  &__btn 
+    position: absolute
+    bottom: 110px
+    left: 450px
+    transition: 0.2s
+    &:nth-of-type(2)
+      left: auto 
+      right: 450px
+      transform: rotate(180deg)
+    &:hover 
+      background-color: #fff
+      background-image: url("data:image/svg+xml,%3Csvg fill='%234A5B74' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 447.243 447.243' style='enable-background:new 0 0 447.243 447.243;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48 c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754 l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160 c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4 l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88 C449.654,211.494,437.806,195.059,420.361,192.229z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E")
+
+.about-slide
+  display: flex
+  flex-direction: column
+  align-items: center
+  &__text 
+    text-align: center
+    font-size: 14px
+    margin-bottom: 35px 
+    color: #fff
+  &__stars 
+    display: flex
+    align-items: center
+    margin-bottom: 35px 
+  &__star
+    width: 17px
+    height: 17px
+    margin-right: 5px
+    &:last-child
+      margin-right: 0
+  &__image
+    width: 85px
+    border-radius: 50%
+    overflow: hidden
+    margin-bottom: 20px
+  &__name, &__subname 
+    font-size: 20px
+    color: #fff
+  
+.about-practice 
+  &__wrapper
+    padding: 100px 0
+  &__title 
+    margin-bottom: 20px
+    text-align: center
+  &__subtitle 
+    font-size: 16px
+    color: $grey-light-color
+    margin-bottom: 40px
+    text-align: center
+  &__blocks  
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1f)
+    grid-column-gap: 35px
+    grid-row-gap: 50px
+
+.practice-block
+  width: 355px
+  display: flex
+  &__image 
+    width: 50px
+    margin-right: 30px
+  &__title 
+    font-size: 20px
+    margin-bottom: 10px
+  &__subtitle
+    font-size: 13px
+
+.about-slider-bottom
+  background-color: #4E525A
