@@ -60,13 +60,13 @@ indexPersonNextBtn.addEventListener('click', () => {
 
 indexPersonPrevBtn.addEventListener('click', () => {
 
-  if (offset == 0) {
-    offset = indexPersonSliderWrapper.offsetWidth * 2
+  if (offsetPerson == 0) {
+    offsetPerson = indexPersonSliderWrapper.offsetWidth * 2
   } else {
-    offset -= indexPersonSlide.offsetWidth
+    offsetPerson -= indexPersonSlide.offsetWidth
   }
 
-  indexPersonSlider.style.transform = `translateX(-${offset}px)`;
+  indexPersonSlider.style.transform = `translateX(-${offsetPerson}px)`;
 
 });
 

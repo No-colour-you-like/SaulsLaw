@@ -962,6 +962,7 @@ img {
 }
 
 .interest-service__main-text {
+  font-size: 13px;
   max-height: 0;
   overflow: hidden;
 }
@@ -1009,14 +1010,14 @@ img {
 }
 
 .our-exps__single-line-first {
-  width: 75%;
+  width: 95%;
   margin-right: 3px;
   border: 1px solid #b9a882;
   background-color: #b9a882;
 }
 
 .our-exps__single-line-second {
-  width: 25%;
+  width: 5%;
 }
 
 .about-slider {
@@ -1024,11 +1025,12 @@ img {
 }
 
 .about-slider__wrapper {
+  position: relative;
   padding: 70px 0;
+  overflow: hidden;
 }
 
 .about-slider__main {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1037,11 +1039,14 @@ img {
           align-items: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .about-slider__btn {
   position: absolute;
-  bottom: 110px;
+  bottom: 175px;
   left: 450px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
@@ -1072,6 +1077,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-width: 100%;
 }
 
 .about-slide__text {
@@ -1103,6 +1109,7 @@ img {
 
 .about-slide__image {
   width: 85px;
+  height: 85px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
@@ -1114,6 +1121,16 @@ img {
 }
 
 .about-practice__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 100px 0;
 }
 
@@ -1123,6 +1140,7 @@ img {
 }
 
 .about-practice__subtitle {
+  max-width: 70%;
   font-size: 16px;
   color: #44484f;
   margin-bottom: 40px;
@@ -1145,8 +1163,11 @@ img {
 }
 
 .practice-block__image {
-  width: 50px;
+  min-width: 50px;
+  height: 50px;
   margin-right: 30px;
+  -webkit-filter: invert(71%) sepia(102%) saturate(937%) hue-rotate(9deg) brightness(95%) contrast(109%);
+          filter: invert(71%) sepia(102%) saturate(937%) hue-rotate(9deg) brightness(95%) contrast(109%);
 }
 
 .practice-block__title {
@@ -1397,6 +1418,7 @@ img {
 }
 
 .footer__posts-title {
+  font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -1514,7 +1536,7 @@ img {
   margin-bottom: 15px;
 }
 
-.team-block__person-image:hover .index-team__hover-info {
+.team-block__person-image:hover .team-block__hover-info {
   opacity: 1;
 }
 
