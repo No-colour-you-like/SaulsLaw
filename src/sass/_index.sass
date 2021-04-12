@@ -111,7 +111,7 @@
 
 .services 
   &__wrapper
-    padding: 50px 160px 90px
+    padding: 50px 0 90px
   &-top 
     display: flex
     &__text
@@ -265,7 +265,6 @@
 
 .index-team 
   &__wrapper
-    padding: 0 160px
     margin-bottom: 100px
   &__top 
     display: flex
@@ -284,86 +283,70 @@
       &:last-child
         font-weight: 700
         margin-bottom: 0
-  &__image 
-    position: relative
-    display: flex
-    align-items: center
-    min-width: 80px
-    height: 80px
-    margin-right: 20px
-    &-center 
-      position: absolute
-      top: 50%
-      left: 50%
-      transform: translate(-50%, -50%)
-      font-family: $dancingscript
-      font-size: 20px
-      color: $brown-color
   &__right 
     min-width: 350px
     &-title 
       font-size: 30px
       margin-bottom: 20px
-  &__bottom 
-    display: flex 
-  &__person 
+
+
+.practice
+  &__wrapper
+    margin-bottom: 100px
+  &__info 
+    display: flex
+    align-items: center
+    margin-bottom: 40px
+    &-text 
+      margin-right: 80px
+    &-title 
+      font-size: 30px 
+      margin-bottom: 20px 
+    &-subtitle 
+      font-size: 15px
+  &__main-btn 
+    color: $grey-color
+  &__blocks 
+    display: flex
+    flex-wrap: wrap 
+  &__block 
     position: relative
-    margin: 0 15px 
-    &:first-child
-      margin-left: 0
-    &:last-child
-      margin-right: 0
-    &-image 
-      position: relative
-      width: 270px 
-      height: 330px
-      margin-bottom: 15px 
-      &:hover 
-        .index-team__hover-info 
-          opacity: 1
-    &-img 
-      position: absolute
-      width: 100%
-      height: 100%
-      object-fit: cover
-      object-position: top
-    &-name
-      font-size: 20px 
-      margin-bottom: 5px 
-    &-spec 
-      font-size: 13px
-  &__hover
-    &-info
+    display: flex
+    justify-content: space-between 
+    align-items: flex-end
+    width: 295px
+    height: 295px
+    padding: 20px
+    background-color: $grey-color
+    cursor: pointer
+    &:before 
       opacity: 0
       position: absolute
+      content: ''
       top: 0
       left: 0
       width: 100%
       height: 100%
-      border: 10px solid rgba($grey-color, 0.4)
-      background-color: rgba($grey-color, 0.7)
-      padding: 50px 20px
-      transition: 0.5s
-      &:after 
-        content: ''
-        width: 100%
-        height: 100%
-        background: rgba($grey-color, 0.5)
-      &-text 
-        font-size: 13px
-        color: #fff
-        margin-bottom: 25px
-    &-icons 
-      display: flex
-    &-icon 
-      margin-right: 10px 
-      &:last-child
-        margin-right: 0
+      background-color: rgba($brown-color, 0.5)
+      transition: 0.3s
+    &:hover 
+      &:before 
+        opacity: 1
+    &-name 
+      position: relative
+      font-family: 'Playfair Display',sans-serif
+      font-size: 20px 
+      color: #fff
+      z-index: 1
+  &__slider-btn 
+    transform: rotate(180deg)
+    transition: 0.2s
+    &:hover 
+      background-image: url("data:image/svg+xml,%3Csvg fill='%23b9a882' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 447.243 447.243' style='enable-background:new 0 0 447.243 447.243;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48 c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754 l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160 c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4 l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88 C449.654,211.494,437.806,195.059,420.361,192.229z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E")
+      background-color: #fff
 
 .index-news 
   margin-bottom: 110px
-  &__wrapper 
-    padding: 0 160px
   &__title 
     text-align: center
     font-size: 30px 

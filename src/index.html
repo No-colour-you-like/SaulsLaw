@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Better Call Saul</title>
+  
+  @@include('_head.html', {
+    'title': 'Better Call Saul'
+  })
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
   <body>
     @@include('_header.html')
 
@@ -230,9 +218,9 @@
                   Адвокаты команды Соула
                 </h2>
                 <div class="index-team__subtitle">
-                  <div class="index-team__image">
-                    <img src="img/sg-logo.png" alt="sg-logo" class="index-team__img">
-                    <p class="index-team__image-center">SG</p>
+                  <div class="sg-logo">
+                    <img src="img/sg-logo.png" alt="sg-logo" class="sg-logo__image">
+                    <p class="sg-logo__image-center">SG</p>
                   </div>
                   <div class="index-team__left-text">
                     <p class="index-team__subtitle-text">Основой квалифицированной юридической помощи клиентам является высокий профессионализм наших сотрудников. За долгие годы существования мы создали коллектив лучших практикующих адвокатов и юристов, чей успешный многолетний опыт и достойная теоретическая база позволяют оказывать клиентам самый широкий спектр юридической помощи – от консультирования частных лиц и абонентского юридического обслуживания организаций до представления интересов клиентов в судах, включая высшие судебные инстанции.</p>
@@ -246,166 +234,57 @@
                 <p class="index-team__subtitle-text">Наши руководители департаментов и ведущие адвокаты занимают высокие репутационные позиции в самых различных отраслях права, являясь авторами большого количества научно-практических монографий, принимают активное участие в подготовке статей для профильных СМИ.</p>
               </div>
             </div>
-            <div class="index-team__bottom">
-              <div class="index-team__person">
-                <div class="index-team__person-image">
-                  <img src="img/lawyers/lawyer-4.jpg" alt="lawyer" class="index-team__person-img">
-                  <div class="index-team__hover-info">
-                    <p class="index-team__hover-info-text">
-                     Специализируется на уголовных делах о преступлениях в сфере экономики, коррупционной направленности и должностных преступлениях.
-                    </p>
-                    <div class="index-team__hover-icons">
-                      <div class="social-links">
-                        <a href="https://www.facebook.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                          y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                          <g>
-                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                                C480.224,136.96,497.728,118.496,512,97.248z" />
-                          </g>
-                        </svg>
-                        </a>
-                        <a href="https://ru.linkedin.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
-                        </a>
-                        <a href="https://www.youtube.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/></svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="index-team__person-name">Вильям Англер</p>
-                <p class="index-team__person-spec">Партнер / Криминальный адвокат</p>
+            
+            @@include('_team-block.html')
+
+          </div>
+        </div>
+      </section>
+      <section class="practice">
+        <div class="container">
+          <div class="practice__wrapper">
+            <div class="practice__info">
+              <div class="practice__info-text">
+                <h1 class="practice__info-title">Наша практика</h1>
+                <p class="practice__info-subtitle">
+                  Команда Соула состоит из специалистов, обладающих исключительно высоким уровнем моральных и этических принципов, обладающих повышенными стандартами профессиональной подготовки и обширным практическим опытом в сопровождении правовых споров различных категорий. Профессионалов, объединенных одной единой целью - добросовестному служению защите прав и законных интересов доверителей.</p>
               </div>
-              <div class="index-team__person">
-                <div class="index-team__person-image">
-                  <img src="img/lawyers/lawyer-5.jpg" alt="lawyer" class="index-team__person-img">
-                  <div class="index-team__hover-info">
-                    <p class="index-team__hover-info-text">
-                      Жилищное, семейное, наследственное право, арбитраж, споры со страховыми компаниями, обширная практика ведения дел этих и других категорий.
-                    </p>
-                    <div class="index-team__hover-icons">
-                      <div class="social-links">
-                        <a href="https://www.facebook.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                          y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                          <g>
-                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                                C480.224,136.96,497.728,118.496,512,97.248z" />
-                          </g>
-                        </svg>
-                        </a>
-                        <a href="https://ru.linkedin.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
-                        </a>
-                        <a href="https://www.youtube.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/></svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="index-team__person-name">Эндрю Филлипс</p>
-                <p class="index-team__person-spec">Бизнесс-адвокат</p>
+              <div class="practice__info-button">
+                <a href="#" class="main-btn practice__main-btn">Детали</a>
               </div>
-              <div class="index-team__person">
-                <div class="index-team__person-image">
-                  <img src="img/lawyers/lawyer-6.jpg" alt="lawyer" class="index-team__person-img">
-                  <div class="index-team__hover-info">
-                    <p class="index-team__hover-info-text">
-                      Представляет интересы граждан и организаций в судах, государственных органах исполнительной власти, органах местного самоуправления.
-                    </p>
-                    <div class="index-team__hover-icons">
-                      <div class="social-links">
-                        <a href="https://www.facebook.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                          y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                          <g>
-                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                                C480.224,136.96,497.728,118.496,512,97.248z" />
-                          </g>
-                        </svg>
-                        </a>
-                        <a href="https://ru.linkedin.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
-                        </a>
-                        <a href="https://www.youtube.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/></svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="index-team__person-name">Билли Доусон</p>
-                <p class="index-team__person-spec">Адвокат</p>
+            </div>
+            <div class="practice__blocks">
+              <div class="practice__block">
+                <p class="practice__block-name">Банкротство</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
               </div>
-              <div class="index-team__person">
-                <div class="index-team__person-image">
-                  <img src="img/lawyers/lawyer-7.jpg" alt="lawyer" class="index-team__person-img">
-                  <div class="index-team__hover-info">
-                    <p class="index-team__hover-info-text">
-                      Судья высшей категории отвечает за правильное исполнение обязанностей и задач, стоящих перед зоной их ответственности.
-                    </p>
-                    <div class="index-team__hover-icons">
-                      <div class="social-links">
-                        <a href="https://www.facebook.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-                        </a>
-                        <a href="https://twitter.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                          y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                          <g>
-                            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-                                c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-                                c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-                                c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-                                c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-                                c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-                                C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-                                C480.224,136.96,497.728,118.496,512,97.248z" />
-                          </g>
-                        </svg>
-                        </a>
-                        <a href="https://ru.linkedin.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z"/><path d="m.396 7.977h4.976v16.023h-4.976z"/><path d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z"/></svg>
-                        </a>
-                        <a href="https://www.youtube.com/" class="social-link" target='_blank'>
-                          <svg class="social-link-img" height="682pt" viewBox="-21 -117 682.66672 682" width="682pt" xmlns="http://www.w3.org/2000/svg"><path d="m626.8125 64.035156c-7.375-27.417968-28.992188-49.03125-56.40625-56.414062-50.082031-13.703125-250.414062-13.703125-250.414062-13.703125s-200.324219 0-250.40625 13.183593c-26.886719 7.375-49.03125 29.519532-56.40625 56.933594-13.179688 50.078125-13.179688 153.933594-13.179688 153.933594s0 104.378906 13.179688 153.933594c7.382812 27.414062 28.992187 49.027344 56.410156 56.410156 50.605468 13.707031 250.410156 13.707031 250.410156 13.707031s200.324219 0 250.40625-13.183593c27.417969-7.378907 49.03125-28.992188 56.414062-56.40625 13.175782-50.082032 13.175782-153.933594 13.175782-153.933594s.527344-104.382813-13.183594-154.460938zm-370.601562 249.878906v-191.890624l166.585937 95.945312zm0 0"/></svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p class="index-team__person-name">Джим Вагнер</p>
-                <p class="index-team__person-spec">Судья высшей категории</p>
+              <div class="practice__block">
+                <p class="practice__block-name">Двустороннее соглашение</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Судебные иски</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Оценка ущерба</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Ипотечный кредит</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Патенты</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Имущество</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
+              </div>
+              <div class="practice__block">
+                <p class="practice__block-name">Страхование</p>
+                <a href="#" class="slider-btn practice__slider-btn"></a>
               </div>
             </div>
           </div>
