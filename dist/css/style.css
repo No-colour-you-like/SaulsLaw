@@ -1601,6 +1601,118 @@ img {
   margin-right: 0;
 }
 
+.team-main {
+  margin-bottom: 100px;
+}
+
+.main-slider-bottom {
+  background-color: #4E525A;
+}
+
+.person__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+}
+
+.person__photo {
+  min-width: 370px;
+  max-width: 370px;
+  height: 460px;
+  margin-right: 30px;
+}
+
+.person__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.person__name {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.person__spec {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #44484f;
+  margin-bottom: 20px;
+}
+
+.person__text {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+.person__social-links {
+  margin-bottom: 5px;
+}
+
+.person__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.person__contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.person__contact-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b9a882;
+}
+
+.person__main-btn {
+  margin-left: auto;
+  color: #454545;
+}
+
+.person--dark {
+  background-color: #454545;
+}
+
+.person--dark .person__wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.person--dark .person__photo {
+  position: relative;
+  margin-right: 0;
+  margin-left: 30px;
+  top: -100px;
+}
+
+.person--dark .person__name, .person--dark .person__spec, .person--dark .person__text {
+  color: #ECECEC;
+}
+
+.person--dark .person__main-btn {
+  color: #fff;
+}
+
+.person__social-links .social-link-img {
+  fill: #C2BFBA;
+}
+
+.person__social-links .social-link-img:hover {
+  fill: #b9a882;
+}
+
 .brown-btn {
   border: 3px solid #b9a882;
 }

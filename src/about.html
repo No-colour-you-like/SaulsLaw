@@ -8,7 +8,10 @@
 <body>
 
   @@include('_header.html')
-  @@include('_underheader.html')
+  @@include('_underheader.html', {
+    'title': 'Мы - команда адвокатов',
+    'subtitle': 'Наши адвокаты имеют стаж профессиональной адвокатской деятельности более 20 лет и все это время успешно практикуют свои навыки.'
+  })
 
   <main class="about-main">
     <section class="about-service">
