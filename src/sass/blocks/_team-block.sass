@@ -9,6 +9,7 @@
     &:last-child
       margin-right: 0
     &-image
+      display: block
       position: relative
       width: 270px
       height: 330px
@@ -29,6 +30,7 @@
       font-size: 13px
   &__hover
     &-info
+      display: block
       opacity: 0
       position: absolute
       top: 0
@@ -36,8 +38,8 @@
       width: 100%
       height: 100%
       border: 10px solid rgba($grey-color, 0.4)
-      background-color: rgba($grey-color, 0.7)
-      padding: 50px 20px
+      background-color: rgba($grey-color, 0.5)
+      padding: 50px 20px 10px 
       transition: 0.5s
       &:after
         content: ''
@@ -54,3 +56,11 @@
       margin-right: 10px
       &:last-child
         margin-right: 0
+  &__person-btn 
+    position: absolute
+    bottom: 20px
+    right: 20px 
+    transform: rotate(180deg)
+    transition: 0.5s
+    &:hover 
+      background-color: $brown-color
