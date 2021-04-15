@@ -1,11 +1,16 @@
 .lawyer
+  &-content   
+    padding-bottom: 100px
+    margin-bottom: 100px
+    border-bottom: 1px solid rgba($grey-color, 0.2)
   &__wrapper
     padding-top: 100px
   &__top
     display: flex
+    margin-bottom: 70px
   &__photo 
     min-width: 570px 
-    height: 480px 
+    height: 570px 
     margin-right: 30px
   &__img 
     width: 100%
@@ -43,8 +48,111 @@
       font-size: 13px
   &__text 
     font-size: 13px
-
-
-
-
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+  &__bottom 
+    display: flex 
+  &__left 
+    min-width: 570px
+    max-width: 570px
+    margin-right: 30px 
+  &__right  
+    width: 100%
+  &-practice 
+    &__wrapper 
+      margin-bottom: 100px
+    &__practices
+      display: flex
+    &__title 
+      margin-bottom: 30px
   
+.education 
+  position: relative
+  margin-bottom: 70px 
+  &:last-child
+    margin-bottom: 0
+  &__timeline 
+    position: absolute
+    top: 64px
+    height: 190px
+    &-long
+      height: 530px
+  &__circle-absolute 
+    position: absolute 
+    &:nth-of-type(1)
+      top: 170px
+    &:nth-of-type(2)
+      top: 340px
+  &__title 
+    margin-bottom: 30px 
+  &__info 
+    height: 110px
+    margin-left: 70px
+    margin-bottom: 60px
+    &:last-child
+      margin-bottom: 0
+    &-title 
+      margin-bottom: 15px 
+      font-size: 18px 
+      text-transform: uppercase
+  &__date 
+    color: $brown-color 
+    font-size: 12px 
+    margin-bottom: 15px 
+  &__text 
+    font-size: 13px
+  
+.directions 
+  &__title 
+    margin-bottom: 30px
+  &__block 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 70px
+    &-part 
+      &:first-child
+        margin-left: 15px
+
+.direction 
+  font-size: 13px
+  margin-bottom: 10px
+  &:last-child
+    margin-bottom: 0    
+  &:before 
+    content: ''
+    display: inline-block
+    width: 10px
+    height: 10px
+    margin-right: 10px
+    background: url("data:image/svg+xml,%3Csvg version='1.1' fill='%23C1AA81' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.002 512.002' style='enable-background:new 0 0 512.002 512.002;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M511.267,197.258c-1.764-5.431-6.457-9.389-12.107-10.209l-158.723-23.065L269.452,20.157 c-2.526-5.12-7.741-8.361-13.45-8.361c-5.71,0-10.924,3.241-13.451,8.361l-70.988,143.827l-158.72,23.065 c-5.649,0.82-10.344,4.778-12.108,10.208c-1.765,5.431-0.293,11.392,3.796,15.377l114.848,111.954L92.271,482.671 c-0.966,5.628,1.348,11.314,5.967,14.671c2.613,1.898,5.708,2.864,8.818,2.864c2.388,0,4.784-0.569,6.978-1.723l141.967-74.638 l141.961,74.637c5.055,2.657,11.178,2.215,15.797-1.141c4.619-3.356,6.934-9.044,5.969-14.672l-27.117-158.081l114.861-111.955 C511.56,208.649,513.033,202.688,511.267,197.258z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+
+
+.evalution 
+  &__title 
+    margin-bottom: 30px 
+  &__form-part 
+    width: 100%
+    &:nth-of-type(1)
+      margin-right: 30px 
+  &__form 
+    display: flex
+    flex-direction: column
+    &-top 
+      display: flex
+  &__input  
+    display: block
+    width: 100%
+    padding: 10px
+    border: none  
+    border-bottom: 1px solid rgba($grey-color, 0.2)
+    margin-bottom: 10px
+    outline: none
+  &__textarea 
+    min-height: 150px
+    resize: none
+    margin-bottom: 40px
+  &__main-btn 
+    margin-left: auto
+    color: $grey-color
+    background-color: transparent
