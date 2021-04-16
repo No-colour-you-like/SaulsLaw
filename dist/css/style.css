@@ -910,9 +910,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .index-news__new {
+  width: 370px;
   margin: 15px;
 }
 
@@ -925,14 +929,12 @@ img {
 }
 
 .index-news__new-image {
-  width: 370px;
   height: 230px;
   background-color: #454545;
   margin-bottom: 20px;
 }
 
 .index-news__new-img {
-  display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1478,6 +1480,167 @@ img {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.single__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+}
+
+.single__content {
+  width: 800px;
+  margin-right: 100px;
+}
+
+.single__image {
+  width: 800px;
+  height: 480px;
+  margin-bottom: 40px;
+}
+
+.single__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.single__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.single__info {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.single__info:nth-of-type(2) {
+  margin-bottom: 65px;
+}
+
+.single__directions {
+  margin-bottom: 50px;
+}
+
+.single__directions-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.single__directions-parts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.single__directions-part {
+  max-width: 400px;
+  margin-right: 150px;
+}
+
+.single__directions-part:last-child {
+  margin-right: 0;
+}
+
+.single__directions-text {
+  font-size: 13px;
+}
+
+.single__direction {
+  margin-bottom: 5px;
+}
+
+.single__direction:last-child {
+  margin-bottom: 0;
+}
+
+.single__direction:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background: url("data:image/svg+xml,%3Csvg version='1.1' fill='%23C1AA81' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.002 512.002' style='enable-background:new 0 0 512.002 512.002;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M511.267,197.258c-1.764-5.431-6.457-9.389-12.107-10.209l-158.723-23.065L269.452,20.157 c-2.526-5.12-7.741-8.361-13.45-8.361c-5.71,0-10.924,3.241-13.451,8.361l-70.988,143.827l-158.72,23.065 c-5.649,0.82-10.344,4.778-12.108,10.208c-1.765,5.431-0.293,11.392,3.796,15.377l114.848,111.954L92.271,482.671 c-0.966,5.628,1.348,11.314,5.967,14.671c2.613,1.898,5.708,2.864,8.818,2.864c2.388,0,4.784-0.569,6.978-1.723l141.967-74.638 l141.961,74.637c5.055,2.657,11.178,2.215,15.797-1.141c4.619-3.356,6.934-9.044,5.969-14.672l-27.117-158.081l114.861-111.955 C511.56,208.649,513.033,202.688,511.267,197.258z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.single__categories {
+  margin-bottom: 45px;
+}
+
+.single__categories-title {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+
+.single__category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(69, 69, 69, 0.3);
+}
+
+.single__category-name {
+  color: #454545;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single__category-name:hover {
+  color: #b9a882;
+}
+
+.single__slider-btn {
+  margin-right: 10px;
+  border-color: #b9a882;
+  cursor: auto;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23b9a882' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 447.243 447.243' style='enable-background:new 0 0 447.243 447.243;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M420.361,192.229c-1.83-0.297-3.682-0.434-5.535-0.41H99.305l6.88-3.2c6.725-3.183,12.843-7.515,18.08-12.8l88.48-88.48 c11.653-11.124,13.611-29.019,4.64-42.4c-10.441-14.259-30.464-17.355-44.724-6.914c-1.152,0.844-2.247,1.764-3.276,2.754 l-160,160C-3.119,213.269-3.13,233.53,9.36,246.034c0.008,0.008,0.017,0.017,0.025,0.025l160,160 c12.514,12.479,32.775,12.451,45.255-0.063c0.982-0.985,1.899-2.033,2.745-3.137c8.971-13.381,7.013-31.276-4.64-42.4 l-88.32-88.64c-4.695-4.7-10.093-8.641-16-11.68l-9.6-4.32h314.24c16.347,0.607,30.689-10.812,33.76-26.88 C449.654,211.494,437.806,195.059,420.361,192.229z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+}
+
+.single__file {
+  padding: 25px 0;
+  border-top: 2px solid #b9a882;
+  border-bottom: 2px solid #b9a882;
+  margin-bottom: 45px;
+}
+
+.single__file-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.single__download-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #454545;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.single__download-link:hover {
+  color: #b9a882;
+}
+
+.single__additional-title {
+  margin-bottom: 30px;
 }
 
 .contact__wrapper {
@@ -2122,12 +2285,19 @@ img {
   padding: 10px 15px;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   outline: none;
   cursor: pointer;
   color: #fff;
   font-size: 13px;
   margin-bottom: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer__contact-input:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .footer__contact-textarea {
@@ -2288,6 +2458,7 @@ img {
 
 .team-block__person-btn:hover {
   background-color: #b9a882;
+  border-color: #b9a882;
 }
 
 .team-main {
@@ -2355,12 +2526,12 @@ img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  margin-bottom: 1px;
 }
 
 .person__contact-text {
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.4;
   color: #b9a882;
   cursor: pointer;
 }

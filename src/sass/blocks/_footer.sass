@@ -102,12 +102,15 @@
       padding: 10px 15px
       background-color: transparent
       border: none
-      border-bottom: 2px solid rgba(#fff, 0.5)
+      border-bottom: 2px solid rgba(#fff, 0.1)
       outline: none
       cursor: pointer
       color: #fff
       font-size: 13px
       margin-bottom: 10px
+      transition: 0.5s
+      &:focus 
+        border-bottom: 2px solid rgba(#fff, 0.5)
     &-textarea  
       resize: none
       margin-bottom: 20px
