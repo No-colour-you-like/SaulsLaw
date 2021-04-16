@@ -1,10 +1,13 @@
+
 *, *:before, *:after
   box-sizing: border-box
 
 body 
   font-family: 'Montserrat', sans-serif
-  width: 1600px
+  max-width: 1615px
+  width: 100%
   margin: 0 auto
+  padding: 0 15px
 
 input, button, textarea 
   font-family: 'Montserrat', sans-serif
@@ -39,7 +42,8 @@ img
   height: auto
 
 .container
-  width: 1200px
+  max-width: 1200px
+  width: 100%
   margin: 0 auto
 
 .main-btn
@@ -91,6 +95,7 @@ img
       transition: 0.3s
       &:hover 
         fill: #fff
+  
 
 .slider-btn
   display: inline-block
@@ -123,6 +128,8 @@ img
       font-family: $dancingscript
       font-size: 20px
       color: $brown-color
+  @include media(1200px) 
+    display: none
 
 .timeline 
   display: flex

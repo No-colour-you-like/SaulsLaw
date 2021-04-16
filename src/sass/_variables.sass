@@ -5,6 +5,16 @@ $grey-dark-color: #363636
 $grey-color: #454545
 
 //Fonts 
-$oxygen: 'Oxygen'
-$parmigiano: 'Parmigiano Piccolo Pro'
 $dancingscript: 'Dancing Script'
+
+
+// Breakpoints
+$port-phone: 576px
+$land-phone: 768px
+$tablet: 992px
+$desktop: 1200px
+
+@mixin media($_size) 
+    @media (max-width: $_size) 
+        @content
+

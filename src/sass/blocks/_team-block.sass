@@ -1,6 +1,7 @@
 .team-block
   &__bottom
     display: flex
+    flex-wrap: wrap
   &__person
     position: relative
     margin: 0 15px
@@ -8,6 +9,14 @@
       margin-left: 0
     &:last-child
       margin-right: 0
+    @include media(1200px)
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 50%
+      margin: 0
+      &:first-child
+        margin-bottom: 40px
     &-image
       display: block
       position: relative
