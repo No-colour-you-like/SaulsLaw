@@ -14,6 +14,9 @@
   &__contacts 
     margin-bottom: 30px
     font-size: 12px
+    @include media(576px)  
+      display: flex
+      flex-direction: column
   &__contact
     display: inline-block
     color: $brown-color
@@ -29,25 +32,51 @@
         top: 50%
         right: -12px
         transform: translateY(-50%)
-        background-color: $grey-light-color
+        background-color: $gray-light-color
         opacity: 0.5
+        @include media(576px)  
+          display: none
+      @include media(576px)  
+        margin-right: 0
   &__nav
+    @include media(768px) 
+      position: absolute
+      right: 0
+      top: 100px
+      max-height: 0
+      z-index: 10
+      background-color: rgba(#fff, 0.8)
+      border-radius: 3px
+      overflow: hidden
+      transition: 1s
     &-block
+      position: relative
       text-align: right
     &-list 
       display: flex
       align-items: center
+      @include media(768px)
+        flex-direction: column
+        justify-content: center
     &-name 
       margin-right: 30px 
       &:last-child
         margin-right: 0
+      @include media(768px)
+        margin-right: 0
+        padding: 10px
     &-link 
       padding-bottom: 34px
       font-size: 14px
       font-weight: 700
-      color: $grey-dark-color
+      color: $gray-dark-color
       border-bottom: 8px solid transparent
       transition: 0.3s
       &:hover 
         border-bottom: 8px solid $brown-color
+      @include media(768px) 
+        border-bottom: none
+        padding-bottom: 0
+        &:hover
+          border-bottom: none
 

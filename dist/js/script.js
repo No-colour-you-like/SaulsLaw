@@ -1,3 +1,15 @@
+//Header hamburger 
+
+const hamburger = document.querySelector('.hamburger'), 
+headerMenu = document.querySelector('.header__nav');
+
+hamburger.addEventListener('click', () => {
+
+  headerMenu.classList.toggle('open-menu')
+
+});
+
+
 //Main-slider 
 
 const mainSliderWrapper = document.querySelector('.main-slider'),

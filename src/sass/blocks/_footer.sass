@@ -1,5 +1,6 @@
 .footer 
-  background-color: $grey-color
+  background-color: $gray-color
+  padding: 0 15px
   &__wrapper
     padding: 40px 0
   &__top
@@ -35,8 +36,18 @@
     position: relative
     display: flex
     justify-content: space-between
+    @include media(992px) 
+      flex-wrap: wrap
   &__addresses 
     width: 240px
+    @include media(992px) 
+      display: flex
+      flex-direction: column  
+      align-items: center
+      width: 50%
+      margin-bottom: 40px
+    @include media(576px) 
+      width: 100%
     &-logo 
       color: #fff
       font-size: 40px
@@ -48,12 +59,21 @@
     font-size: 13px
     color: #fff 
     margin-bottom: 10px
+    @include media(992px)  
+      text-align: center
   &__mail 
     margin-bottom: 25px
   &__address 
     margin-bottom: 20px
   &__services 
     width: 190px 
+    @include media(992px) 
+      width: 50%
+      display: flex
+      flex-direction: column  
+      align-items: center
+    @include media(576px)
+      display: none 
     &-title 
       font-size: 20px
       color: #fff
@@ -78,6 +98,11 @@
         transform: rotate(180deg)
   &__posts 
     width: 250px
+    @include media(992px) 
+      text-align: center
+      width: 50%
+    @include media(576px)
+      display: none 
     &-title 
       font-size: 20px
       color: #fff
@@ -92,7 +117,15 @@
       font-size: 12px
       color: $brown-color
   &__contact
-    width: 270px
+    width: 250px
+    @include media(992px) 
+      width: 50%
+      display: flex
+      flex-direction: column  
+      align-items: center
+    @include media(576px) 
+      margin-top: 20px
+      width: 100%
     &-title 
       font-size: 20px
       color: #fff
@@ -122,6 +155,8 @@
     left: 0
     font-size: 13px
     color: #fff
+    @include media(768px)  
+      bottom: -30px
   &__var-top-slider 
     background-color: #4E525A
 

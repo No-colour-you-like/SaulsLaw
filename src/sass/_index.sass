@@ -61,6 +61,8 @@
         margin-left: 100px
       @include media(1200px) 
         margin-left: 0
+      @include media(768px) 
+        padding: 0 15px
     &-title
       font-family: $dancingscript
       font-size: 93px
@@ -128,7 +130,7 @@
       display: none
     &__text
       margin-right: 35px
-      color: $grey-light-color
+      color: $gray-light-color
     &__title 
       font-size: 30px
       font-weight: bold
@@ -174,6 +176,7 @@
       margin-bottom: 30px
     &__values 
       display: flex
+      flex-wrap: wrap
     &__value
       margin-right: 20px
       width: 170px
@@ -220,6 +223,8 @@
       opacity: 0.5
     @include media(1200px) 
       width: 100%
+  @include media(576px)  
+      display: none
   &__slider
     display: flex
     transition: 1s
@@ -325,8 +330,12 @@
       margin-bottom: 20px 
     &-subtitle 
       font-size: 15px
+      @include media(576px)  
+        margin-bottom: 20px
+    @include media(576px)   
+      flex-wrap: wrap
   &__main-btn 
-    color: $grey-color
+    color: $gray-color
   &__blocks 
     display: flex
     flex-wrap: wrap 
@@ -414,11 +423,14 @@
     text-align: center
     max-width: 600px
     font-size: 16px 
-    color: $grey-light-color
+    color: $gray-light-color
     margin: 0 auto 35px
   &__news
     display: flex
     justify-content: space-between
+    @include media(576px) 
+      justify-content: center
+      flex-wrap: wrap
   &__new 
     width: 370px
     margin: 15px
@@ -431,9 +443,12 @@
         display: none
       &:nth-child(2)
         margin-right: 0
+    @include media(576px) 
+      margin: 0
+      margin-bottom: 20px
     &-image 
       height: 230px 
-      background-color: $grey-color
+      background-color: $gray-color
       margin-bottom: 20px 
     &-img
       width: 100%
@@ -450,7 +465,7 @@
       display: flex 
       align-items: center
       font-size: 10px
-      color: $grey-light-color
+      color: $gray-light-color
       margin-bottom: 30px 
     &-autor 
       margin-right: 15px
@@ -458,7 +473,7 @@
       font-size: 13px
       margin-bottom: 25px 
     &-btn 
-      color: $grey-color
+      color: $gray-color
   &__icon
     width: 15px 
     height: 15px

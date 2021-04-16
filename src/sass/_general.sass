@@ -30,11 +30,11 @@ h1, h2, h3, h4, h5, h6, p, ul
 
 p 
   line-height: 1.5
-  color: $grey-light-color
+  color: $gray-light-color
 
 h1, h2, h3 
   font-family: 'Playfair Display', sans-serif
-  color: $grey-color
+  color: $gray-color
   font-size: 30px
 
 img 
@@ -59,7 +59,7 @@ img
   &:hover 
     background-color: $brown-color
   &--dark 
-    color: $grey-color
+    color: $gray-color
 
 .logo
   margin-right: 20px
@@ -69,14 +69,29 @@ img
   &-text 
     font-family: 'Dancing Script', cursive
     font-size: 45px
-    color: $grey-dark-color
+    color: $gray-dark-color
     span 
       color: $brown-color
+    @include media(576px) 
+      font-size: 30px
   &-subtext 
     font-size: 9px
     text-transform: uppercase
     letter-spacing: 2px
-    color: $grey-light-color
+    color: $gray-light-color
+
+.hamburger 
+  display: none
+  &__line 
+    width: 30px 
+    height: 3px
+    background-color: $gray-color
+    margin-bottom: 3px 
+    &:last-child
+      margin-bottom: 0
+  @include media(768px) 
+    display: inline-block
+
 
 .social
   &-links
@@ -157,3 +172,4 @@ img
     border: 1px solid #DBDEE3 
     border-top: none 
     border-bottom: none
+
